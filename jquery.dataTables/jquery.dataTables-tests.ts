@@ -237,7 +237,7 @@ $(document).ready(function () {
                 },
                 {
                     action: function(e, dt, node, config){ },
-                    available: function(dt, config){ },
+                    available: function (dt, config) { return true;},
                     destroy: function(dt, node, config) { },
                     enabled: true,
                     init: function (dt, node, config) { },
