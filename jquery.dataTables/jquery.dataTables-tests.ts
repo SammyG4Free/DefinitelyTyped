@@ -225,6 +225,28 @@ $(document).ready(function () {
             searchDelay: 10,
             stateDuration: 10,
             tabIndex: 10,
+            // Buttons extension options
+            buttons: [
+                {
+                    extend: 'excel',
+                    text: 'Excel',
+                    className: 'class',
+                    exportOptions: {
+                        columns: ':visible'
+                    }
+                },
+                {
+                    action: function(e, dt, node, config){ },
+                    available: function(dt, config){ },
+                    destroy: function(dt, node, config) { },
+                    enabled: true,
+                    init: function (dt, node, config) { },
+                    key: 'a',
+                    name: 'name',
+                    namespace: 'namespace',
+                    titleAttr: 'title',
+                }
+            ],
         };
 
 
